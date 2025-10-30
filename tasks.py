@@ -31,10 +31,10 @@ def step(x):
 
 # Your code here:
 # -----------------------------------------------
+
 def ReLu(arr, cutoff=0):
     return np.maximum(arr, cutoff)
 
-ReLU = ReLu
 
 # -----------------------------------------------
 
@@ -57,5 +57,6 @@ def neural_net_layer(X, w):
     dot_product = np.dot(X, w)
     return ReLu(dot_product)
 
+ReLU = ReLu
 
 # ------------------------------------------
