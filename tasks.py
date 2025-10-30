@@ -34,6 +34,8 @@ def step(x):
 def ReLu(arr, cutoff=0):
     return np.maximum(arr, cutoff)
 
+ReLU = ReLu
+
 # -----------------------------------------------
 
 
