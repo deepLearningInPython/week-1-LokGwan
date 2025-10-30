@@ -35,6 +35,9 @@ def step(x):
 def ReLu(arr, cutoff=0):
     return np.maximum(arr, cutoff)
 
+def ReLU(arr, cutoff=0):
+    return np.maximum(arr, cutoff)
+
 
 # -----------------------------------------------
 
@@ -57,6 +60,13 @@ def neural_net_layer(X, w):
     dot_product = np.dot(X, w)
     return ReLu(dot_product)
 
-ReLU = ReLu
+
+def neural_net_layer(X, w):
+    '''
+    X shape: (n_sample, p_features)
+    w shape: (p_features,)
+    '''
+    dot_product = np.dot(X, w)
+    return ReLU(dot_product)
 
 # ------------------------------------------
